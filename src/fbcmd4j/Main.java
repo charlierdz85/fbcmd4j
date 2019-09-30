@@ -1,6 +1,7 @@
 package fbcmd4j;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -10,10 +11,8 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import facebook4j.Facebook;
-import facebook4j.Post;
-import facebook4j.ResponseList;
-
+import facebook4j.*;
+import facebook4j.auth.AccessToken;
 import fbcmd4j.utils.Utils;
 
 public class Main {
@@ -36,7 +35,7 @@ public class Main {
 			Scanner scan = new Scanner(System.in);
 			while(true) {
 				Facebook fb = Utils.configFacebook(props);
-				System.out.println("Cliente de Facebook en línea de comando\n\n"
+				System.out.println("Cliente de Facebook en linea de comando\n\n"
 								+  "Opciones: \n"
 								+  "(0) Configurar Cliente \n"
 								+  "(1) NewsFeed \n"
@@ -44,7 +43,7 @@ public class Main {
 								+  "(3) Publicar Estado \n"
 								+  "(4) Publicar Link \n"
 								+  "(5) Salir \n"
-								+  "\nPor favor ingrese una opción:");
+								+  "\nPor favor ingrese una opcion:");
 				try {
 					option = scan.nextInt();
 					scan.nextLine();
@@ -55,15 +54,27 @@ public class Main {
 						break;
 					case 1:
 						System.out.println("Mostrando NewsFeed...");
+						ResponseList fbNewsFeed = fb.getHome();
+						
+						askToSaveFile("fbNewsFeed", fbNewsFeed, scan);
 						break;
 					case 2:
 						System.out.println("Mostrando Wall...");
+						ResponseList fbWall = fb.getFeed();
+						askToSaveFile("fbNewsFeed", fbWall, scan);
 						break;
 					case 3:
 						System.out.println("Escribe tu estado: ");
+						String mensaje = scan.nextLine();
+						fb.postStatusMessage(mensaje);
 						break;
 					case 4:
 						System.out.println("Ingresa el link: ");
+						String link = scan.nextLine();
+						System.out.println("Ingresa un mensaje: ");
+						String linkMsg = scan.nextLine();
+						
+						fb.postLink(new URL(link), linkMsg);
 						break;
 					case 5:
 						System.out.println("Gracias por usar el cliente!");
@@ -73,10 +84,11 @@ public class Main {
 						break;
 					}
 				} catch (InputMismatchException ex) {
-					System.out.println("Ocurrió un errror, favor de revisar log.");
-					logger.error("Opción inválida. %s. \n", ex.getClass());
+					System.out.println("Ocurrio un errror, favor de revisar log.");
+					logger.error("Opcion invalida. %s. \n", ex.getClass());
 				} catch (Exception ex) {
-					System.out.println("Ocurrió un errror, favor de revisar log.");
+					System.out.println("Ocurrio un errror, favor de revisar log.");
+					System.out.println(ex.getMessage());
 					logger.error(ex);
 				}
 				System.out.println();
@@ -96,11 +108,11 @@ public class Main {
 
 			while(n <= 0) {
 				try {
-					System.out.println("Cuántos posts deseas guardar?");
+					System.out.println("Cuantos posts deseas guardar?");
 					n = Integer.parseInt(scan.nextLine());					
 			
 					if(n <= 0) {
-						System.out.println("Favor de ingresar un número válido");
+						System.out.println("Favor de ingresar un numero válido");
 					} else {
 						for(int i = 0; i<n; i++) {
 							if(i>posts.size()-1) break;
@@ -115,4 +127,5 @@ public class Main {
 			Utils.savePostsToFile(fileName, ps);
 		}
 	}
+	
 }
