@@ -10,6 +10,11 @@ El programa hace uso de la libreria facebook4j, una librería no oficial para Ja
 
 Main: Es la clase principal, contiene todos los métodos y la lógica para el funcionamiento del programa.<br>
 facebook4j-core-2.4.13.jar: Es la librería con la que realizamos las transacciones entre nuestra aplicación y el sistema de facebook.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se realiza el uso de los siguientes métodos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- getHome(): Obtiene las publicaciones de tu muro.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- getFeed(): Obtiene las noticias publicadas en tu muro.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- postStatusMessage(): Publica un mensaje en tu muro.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- postLink: Publica un link con un mensaje en tu muro.
 log4j-api-2.12.1.jar: Esta libreria nos ayuda a generar un log para obtener los movimientos en el sistema y la captura de errores en un archivo .log.<br>
 
 # Instalación
@@ -38,3 +43,5 @@ Al ejecutar la aplicación, podrá realizar las siguientes acciones:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publica un link en tu muro.<br>
 (5) Salir<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cierra el programa.<br>
+
+
