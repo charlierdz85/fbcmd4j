@@ -2,8 +2,15 @@
 Curso Computación con Java - Evidencia de aprendizaje.<br>
 Este programa puede consultar tu cuenta de Facebook y obtener noticias, publicaciones y publicar mensajes y links.
 
+El programa hace uso de la libreria facebook4j, una librería no oficial para Java que ayuda a la conexión con el sistema de Facebook.
+
 ![Diagrama](diagrama.jpg)
 
+# Aplicación
+
+Main: Es la clase principal, contiene todos los métodos y la lógica para el funcionamiento del programa.
+facebook4j-core-2.4.13.jar: Es la librería con la que realizamos las transacciones entre nuestra aplicación y el sistema de facebook.
+log4j-api-2.12.1.jar: Esta libreria nos ayuda a generar un log para obtener los movimientos en el sistema y la captura de errores en un archivo .log.
 
 # Instalación
 Copie el archivo bin/fbcmd.jar a alguna carpeta destino de su PC y ejecútelo. Se crearán las carpetas log y config.
