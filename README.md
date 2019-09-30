@@ -1,5 +1,6 @@
 # fbcmd4j
-Curso Computación con Java - Evidencia de aprendizaje
+Curso Computación con Java - Evidencia de aprendizaje.<br>
+Este programa puede consultar tu cuenta de Facebook y obtener noticias, publicaciones y publicar mensajes y links.
 
 # Instalación
 Copie el archivo bin/fbcmd.jar a alguna carpeta destino de su PC y ejecútelo. Se crearán las carpetas log y config.
@@ -13,7 +14,7 @@ Abra el archivo config/fbcmd4j.properties y capture los siguientes datos:<br><br
   
   Estos datos los puede obtener desde su cuenta de Facebook en http://developers.facebook.com
 
-# Uso
+# Funcionamiento
 Al ejecutar la aplicación, podrá realizar las siguientes acciones:<br>
 (0) Configuración del sistema<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permite generar una clave para registrar el http://www.facebook.com/devices, para activar la configuracion del programa.<br>
