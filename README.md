@@ -3,13 +3,13 @@ Curso Computación con Java - Evidencia de aprendizaje
 
 # Instalación
 Copie el archivo bin/fbcmd.jar a alguna carpeta destino de su PC y ejecútelo. Se crearán las carpetas log y config.
-Abra el archivo config/fbcmd4j.properties y capture los siguientes datos:
+Abra el archivo config/fbcmd4j.properties y capture los siguientes datos:<br><br>
 
-  oauth.appSecret
-  oauth.accessToken
-  oauth.permissions
-  oauth.appId
-  oauth.clientToken
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oauth.appSecret<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oauth.accessToken<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oauth.permissions<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oauth.appId<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oauth.clientToken<br><br>
   
   Estos datos los puede obtener desde su cuenta de Facebook en http://developers.facebook.com
 
