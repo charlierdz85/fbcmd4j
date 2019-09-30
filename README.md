@@ -15,15 +15,15 @@ Abra el archivo config/fbcmd4j.properties y capture los siguientes datos:
 
 # Uso
 Al ejecutar la aplicación, podrá realizar las siguientes acciones:<br>
-(0) Configuración del sistema
-    Permite generar una clave para registrar el http://www.facebook.com/devices, para activar la configuracion del programa.
-(1) NewsFeed
-    Permite obtener las últimas N noticias y las guarda en un archivo de texto.
-(2) Wall
-    Permite obtener las últimas N publicaciones de tu muro y las guarda en un archivo de texto.
-(3) Publicar estado
-    Publica un mensaje en tu muro.
-(4) Publicar link
-    Publica un link en tu muro.
-(5) Salir
-    Cierra el programa.
+(0) Configuración del sistema<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permite generar una clave para registrar el http://www.facebook.com/devices, para activar la configuracion del programa.<br>
+(1) NewsFeed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permite obtener las últimas N noticias y las guarda en un archivo de texto.<br>
+(2) Wall<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permite obtener las últimas N publicaciones de tu muro y las guarda en un archivo de texto.<br>
+(3) Publicar estado<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publica un mensaje en tu muro.<br>
+(4) Publicar link<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publica un link en tu muro.<br>
+(5) Salir<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cierra el programa.<br>
