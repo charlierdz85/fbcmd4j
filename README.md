@@ -2,7 +2,7 @@
 Curso Computación con Java - Evidencia de aprendizaje.<br>
 Este programa puede consultar tu cuenta de Facebook y obtener noticias, publicaciones y publicar mensajes y links.
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Diagrama")
+![Diagrama](diagrama.jpg)
 
 
 # Instalación
