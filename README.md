@@ -14,7 +14,7 @@ Abra el archivo config/fbcmd4j.properties y capture los siguientes datos:
   Estos datos los puede obtener desde su cuenta de Facebook en http://developers.facebook.com
 
 # Uso
-Al ejecutar la aplicación, podrá realizar las siguientes acciones:
+Al ejecutar la aplicación, podrá realizar las siguientes acciones:<br>
 (0) Configuración del sistema
     Permite generar una clave para registrar el http://www.facebook.com/devices, para activar la configuracion del programa.
 (1) NewsFeed
